@@ -1,9 +1,10 @@
 <template>
   <footer class="bg-gray-900 text-white p-8 text-center mt-auto shadow-inner">
     <div class="container mx-auto">
-      <p class="text-lg mb-4">&copy; {{ currentYear }} Tu Cafetería. Todos los derechos reservados.</p>
+      <p class="text-lg mb-4">&copy; {{ currentYear }} Coloquial. Todos los derechos reservados.</p>
       <div class="flex justify-center space-x-6 mb-4">
         <a href="#" class="text-gray-400 hover:text-white transition duration-300">Facebook</a>
+        
         <a href="#" class="text-gray-400 hover:text-white transition duration-300">Instagram</a>
         <a href="#" class="text-gray-400 hover:text-white transition duration-300">Twitter</a>
       </div>

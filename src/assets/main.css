@@ -1,3 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap');
 @import "tailwindcss";
 
+:root {
+  --color-yellow: #FAB932;
+  --color-black: #181818;
+  --color-white: #ffffff;
+
+  --color-background: var(--color-white);
+  --color-background-soft: var(--color-yellow);
+  --color-background-mute: var(--color-yellow);
+
+  --color-border: var(--color-black);
+  --color-border-hover: var(--color-yellow);
+
+  --color-heading: var(--color-black);
+  --color-text: var(--color-black);
+
+  --section-gap: 160px;
+}
+
+/* Si quieres que el modo oscuro mantenga la paleta */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-black);
+    --color-background-soft: var(--color-black);
+    --color-background-mute: var(--color-black);
+
+    --color-border: var(--color-yellow);
+    --color-border-hover: var(--color-yellow);
+
+    --color-heading: var(--color-yellow);
+    --color-text: var(--color-yellow);
+  }
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --color-background: var(--color-black);
+  --color-background-soft: var(--color-black);
+  --color-background-mute: var(--color-black);
+
+  --color-border: var(--color-yellow);
+  --color-border-hover: var(--color-yellow);
+
+  --color-heading: var(--color-yellow);
+  --color-text: var(--color-yellow);
+}

@@ -62,21 +62,21 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: '/images/slide1.jpg', // Asegúrate de que esta imagen exista en public/images/slider
+    image: '/images/slider1.jpg', 
     title: 'Tu Rincón de Café Perfecto',
     description: 'Sumérgete en el aroma, saborea la tradición.',
     link: '/menu',
     buttonText: 'Explora Nuestro Menú'
   },
   {
-    image: '/images/slide1.jpg',
+    image: '/images/slider1.jpg',
     title: 'Despierta tus Sentidos',
     description: 'Cada taza, una experiencia única de sabor y pasión.',
     link: '/about',
     buttonText: 'Conoce Nuestra Historia'
   },
   {
-    image: '/images/slide1.jpg',
+    image: '/images/slider1.jpg',
     title: 'Momentos Inolvidables',
     description: 'El ambiente ideal para tus encuentros y tu inspiración diaria.',
     link: '/contact',

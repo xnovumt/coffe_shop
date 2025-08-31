@@ -1,6 +1,7 @@
 <template>
+  
   <div class="flex flex-col min-h-screen font-body">
-    <TheNavbar />
+    <TheNavbar/>
     <main class="flex-grow">
       <router-view />
     </main>
