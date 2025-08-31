@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-900 text-white p-8 text-center mt-auto shadow-inner">
+  <footer class="bg-yellow-500 text-black p-8 text-center mt-auto shadow-inner">
     <div class="container mx-auto">
       <p class="text-lg mb-4">&copy; {{ currentYear }} Coloquial. Todos los derechos reservados.</p>
       <div class="flex justify-center space-x-6 mb-4">

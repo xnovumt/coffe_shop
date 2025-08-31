@@ -1,8 +1,8 @@
 <template>
-  <header class="p-4 shadow-lg sticky top-0 z-50" :style="{ background: 'var(--color-background)', color: 'var(--color-text)' }">
+  <header class="bg-yellow-500 text-black p-4 shadow-lg sticky top-0 z-50">
     <nav class="container mx-auto flex justify-between items-center">
       <router-link to="/" class="text-3xl font-display font-extrabold tracking-wide hover:text-yellow-accent transition duration-300 transform hover:scale-105" :style="{ color: 'var(--color-heading)' }">
-        <span :style="{ color: 'var(--color-yellow)' }">Coloquial</span>
+        <span class="text-black">Coloquial</span>
       </router-link>
 
       <div class="flex space-x-6">

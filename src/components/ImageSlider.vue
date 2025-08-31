@@ -1,10 +1,16 @@
 <template>
   <div class="relative w-full h-[600px] overflow-hidden">
+    <!-- Fondo de imagen -->
     <div
-      class="absolute inset-0 transition-opacity duration-1000 ease-in-out bg-cover bg-center"
-      :style="{ opacity: currentSlideOpacity, backgroundImage: `url(${currentSlide.image})` }"
+      class="absolute inset-0 w-full h-full bg-cover bg-center z-0"
+      :style="{
+        opacity: currentSlideOpacity,
+        backgroundImage: currentSlide.image ? `url(${currentSlide.image})` : 'none',
+        backgroundColor: currentSlide.image ? 'transparent' : '#181818'
+      }"
     ></div>
 
+    <!-- Capa de contenido y superposición -->
     <div class="absolute inset-0 flex items-center justify-center p-4 bg-black bg-opacity-30 z-10">
       <div class="text-center text-white-text">
         <h1 class="text-5xl md:text-7xl font-display font-extrabold mb-4 drop-shadow-lg leading-tight">
@@ -62,7 +68,7 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: '/images/slider1.jpg', 
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
     title: 'Tu Rincón de Café Perfecto',
     description: 'Sumérgete en el aroma, saborea la tradición.',
     link: '/menu',
